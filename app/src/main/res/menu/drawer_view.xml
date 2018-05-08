@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_attractions"
+            android:icon="@drawable/museum"
+            android:title="@string/nav_attractions" />
+        <item
+            android:id="@+id/nav_parks"
+            android:icon="@drawable/park"
+            android:title="@string/nav_parks" />
+        <item
+            android:id="@+id/nav_top10_restaurants"
+            android:icon="@drawable/restaurant"
+            android:title="@string/nav_top_10_restaurants" />
+        <item
+            android:id="@+id/nav_summer_festivals"
+            android:icon="@drawable/festival"
+            android:title="@string/nav_summer_festivals" />
+    </group>
+</menu>

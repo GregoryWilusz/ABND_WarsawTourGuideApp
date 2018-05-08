@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Warsaw Tour Guide App</string>
+    <string name="nav_attractions">Attractions</string>
+    <string name="nav_parks">Parks</string>
+    <string name="nav_top_10_restaurants">TOP 10 restaurants</string>
+    <string name="nav_summer_festivals">Summer Festivals</string>
 </resources>
