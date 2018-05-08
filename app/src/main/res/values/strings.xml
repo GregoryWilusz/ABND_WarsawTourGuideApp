@@ -15,4 +15,5 @@
     <string name="hello_park_fragment">Hello Parks fragment</string>
     <string name="hello_fest_fragment">Hello Festival fragment</string>
     <string name="hello_rest_fragment">Hello Restaurants fragment</string>
+    <string name="warsaw_attraction_image_description">Warsaw Attraction</string>
 </resources>
