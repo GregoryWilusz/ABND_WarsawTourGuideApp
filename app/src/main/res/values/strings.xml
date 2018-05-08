@@ -5,4 +5,14 @@
     <string name="nav_top_10_restaurants">TOP 10 restaurants</string>
     <string name="nav_summer_festivals">Summer Festivals</string>
     <string name="nav_drawer_header">Choose what do you want to visit</string>
+    <string name="page_title_attractions">Attractions you must see at Warsaw</string>
+    <string name="page_title_parks">Visit historical parks</string>
+    <string name="page_title_restaurants">Eat in the best restaurants</string>
+    <string name="page_title_festivals">Attend to popular summer festivals</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hello_park_fragment">Hello Parks fragment</string>
+    <string name="hello_fest_fragment">Hello Festival fragment</string>
+    <string name="hello_rest_fragment">Hello Restaurants fragment</string>
 </resources>
