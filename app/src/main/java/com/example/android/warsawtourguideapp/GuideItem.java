@@ -22,64 +22,55 @@ public class GuideItem {
         this.mOpenHours = mOpenHours;
     }
 
-    public String getmName() {
-        return mName;
+    public GuideItem(String mName, String mAddress, int mImageResourceID) {
+        this.mName = mName;
+        this.mAddress = mAddress;
+        this.mImageResourceID = mImageResourceID;
     }
 
-    public void setmName(String mName) {
+    public GuideItem(String mName, String mAddress, String mDateFrom, String mDateTo) {
         this.mName = mName;
+        this.mAddress = mAddress;
+        this.mDateFrom = mDateFrom;
+        this.mDateTo = mDateTo;
+    }
+
+    public GuideItem(String mName, String mAddress, String mDateFrom) {
+        this.mName = mName;
+        this.mAddress = mAddress;
+        this.mDateFrom = mDateFrom;
+    }
+
+    public String getmName() {
+        return mName;
     }
 
     public String getmAddress() {
         return mAddress;
     }
 
-    public void setmAddress(String mAddress) {
-        this.mAddress = mAddress;
-    }
-
     public int getmImageResourceID() {
         return mImageResourceID;
-    }
-
-    public void setmImageResourceID(int mImageResourceID) {
-        this.mImageResourceID = mImageResourceID;
     }
 
     public String getmPhoneNumber() {
         return mPhoneNumber;
     }
 
-    public void setmPhoneNumber(String mPhoneNumber) {
-        this.mPhoneNumber = mPhoneNumber;
-    }
-
     public String getmOpenHours() {
         return mOpenHours;
     }
 
-    public void setmOpenHours(String mOpenHours) {
-        this.mOpenHours = mOpenHours;
+    public boolean hasImage() {
+        return mImageResourceID != NO_IMAGE_PROVIDED;
     }
 
     public String getmDateFrom() {
         return mDateFrom;
     }
 
-    public void setmDateFrom(String mDateFrom) {
-        this.mDateFrom = mDateFrom;
-    }
-
     public String getmDateTo() {
         return mDateTo;
-    }
-
-    public void setmDateTo(String mDateTo) {
-        this.mDateTo = mDateTo;
-    }
-
-    public boolean hasImage() {
-        return mImageResourceID != NO_IMAGE_PROVIDED;
     }
 
     @Override

@@ -66,6 +66,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.nav_summer_festivals:
                 fragmentClass = FestivalsFragment.class;
                 break;
+            case R.id.nav_home:
+                fragmentClass = HomeFragment.class;
+                break;
             default:
                 fragmentClass = AttractionsFragment.class;
         }
@@ -98,4 +101,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }

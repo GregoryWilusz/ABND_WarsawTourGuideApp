@@ -16,4 +16,11 @@
     <string name="hello_fest_fragment">Hello Festival fragment</string>
     <string name="hello_rest_fragment">Hello Restaurants fragment</string>
     <string name="warsaw_attraction_image_description">Warsaw Attraction</string>
+    <string name="nav_home_screen">Home screen</string>
+    <string name="nav_sub_menu">Navigate to:</string>
+    <string name="address_label">Address:</string>
+    <string name="opening_hours_label">Opening hours:</string>
+    <string name="phone_number_label">Phone number:</string>
+    <string name="when_label">When:</string>
+    <string name="dates_separator">-</string>
 </resources>
