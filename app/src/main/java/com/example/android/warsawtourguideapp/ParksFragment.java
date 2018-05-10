@@ -33,12 +33,12 @@ public class ParksFragment extends Fragment {
 
         final ArrayList<GuideItem> guideItems = new ArrayList<GuideItem>();
 
-        guideItems.add(new GuideItem("Mokotów Field", "Mokotów District", R.drawable.mokotow));
-        guideItems.add(new GuideItem("Saxon Garden", "Śródmieście District", R.drawable.saxon));
-        guideItems.add(new GuideItem("Ujazdów Park", "Śródmieście District", R.drawable.ujazdow));
-        guideItems.add(new GuideItem("Skaryszewski Park", "Praga District", R.drawable.skaryszewski));
-        guideItems.add(new GuideItem("Praga Park", "Praga District", R.drawable.praga));
-        guideItems.add(new GuideItem("Natolin Park", "Wilanów District", R.drawable.natolin));
+        guideItems.add(new GuideItem(getString(R.string.park_1_name), getString(R.string.park_1_addr), R.drawable.mokotow));
+        guideItems.add(new GuideItem(getString(R.string.park_2_name), getString(R.string.park_2_addr), R.drawable.saxon));
+        guideItems.add(new GuideItem(getString(R.string.park_3_name), getString(R.string.park_3_addr), R.drawable.ujazdow));
+        guideItems.add(new GuideItem(getString(R.string.park_4_name), getString(R.string.park_4_addr), R.drawable.skaryszewski));
+        guideItems.add(new GuideItem(getString(R.string.park_5_name), getString(R.string.park_5_addr), R.drawable.praga));
+        guideItems.add(new GuideItem(getString(R.string.park_6_name), getString(R.string.park_6_addr), R.drawable.natolin));
 
         GuideItemAdapter adapter = new GuideItemAdapter(getActivity(), guideItems);
 

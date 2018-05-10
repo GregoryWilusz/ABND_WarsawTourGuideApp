@@ -33,8 +33,14 @@ public class FestivalsFragment extends Fragment {
 
         final ArrayList<GuideItem> guideItems = new ArrayList<GuideItem>();
 
-        guideItems.add(new GuideItem("Jazz na Starówce", "Old Town Square", "July", "August"));
-        guideItems.add(new GuideItem("Jazz na Starówce", "Old Town Square", "July"));
+        guideItems.add(new GuideItem(getString(R.string.fest_1_name), getString(R.string.fest_1_addr), getString(R.string.fest_1_date_from), getString(R.string.fest_1_date_to)));
+        guideItems.add(new GuideItem(getString(R.string.fest_2_name), getString(R.string.fest_2_addr), getString(R.string.fest_2_date_from)));
+        guideItems.add(new GuideItem(getString(R.string.fest_3_name), getString(R.string.fest_3_addr), getString(R.string.fest_3_date_from), getString(R.string.fest_3_date_to)));
+        guideItems.add(new GuideItem(getString(R.string.fest_4_name), getString(R.string.fest_4_addr), getString(R.string.fest_4_date_from), getString(R.string.fest_4_date_to)));
+        guideItems.add(new GuideItem(getString(R.string.fest_5_name), getString(R.string.fest_5_addr), getString(R.string.fest_5_date_from), getString(R.string.fest_5_date_to)));
+        guideItems.add(new GuideItem(getString(R.string.fest_6_name), getString(R.string.fest_6_addr), getString(R.string.fest_6_date_from), getString(R.string.fest_6_date_to)));
+        guideItems.add(new GuideItem(getString(R.string.fest_7_name), getString(R.string.fest_7_addr), getString(R.string.fest_7_date_from)));
+        
 
         GuideItemAdapter adapter = new GuideItemAdapter(getActivity(), guideItems);
 

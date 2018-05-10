@@ -33,16 +33,16 @@ public class RestaurantsFragment extends Fragment {
 
         final ArrayList<GuideItem> guideItems = new ArrayList<GuideItem>();
 
-        guideItems.add(new GuideItem("San Thai", "10 Próżna St.", R.drawable.san_thai,"(+48) 577 607 775", "12 a.m. - 10 p.m."));
-        guideItems.add(new GuideItem("Soto Sushi", "28 Waryńskiego St.", R.drawable.sushi,"(+48) 501 608 806", "12 a.m. - 10 p.m."));
-        guideItems.add(new GuideItem("Amber Room", "13 Ujazdowskie Av.", R.drawable.amber,"(+48 22) 523 66 64", "12 a.m. - 11 p.m."));
-        guideItems.add(new GuideItem("N31restaurant&bar", "31 Nowogrodzka St.", R.drawable.sowa,"(+48) 600 861 961", "12 a.m. - 11 p.m."));
-        guideItems.add(new GuideItem("Polska Różana", "7 Chocimska St.", R.drawable.rozana,"(+48 22) 848 12 25", "12 a.m. - 12 p.m."));
-        guideItems.add(new GuideItem("Stolica", "1/3 Szeroki Dunaj St.", R.drawable.stolica,"(+48) 604 598 764", "11 a.m. - 11 p.m."));
-        guideItems.add(new GuideItem("Maho", "240/242 Krakowska St.", R.drawable.maho,"(+48 22) 609 15 48", "10 a.m. - 11 p.m."));
-        guideItems.add(new GuideItem("Mr India", "47 KEN Av.", R.drawable.mr_india,"(+48 22) 213 06 89", "11 a.m. - 10 p.m."));
-        guideItems.add(new GuideItem("Hoża", "25A Hoża St.", R.drawable.hoza,"(+48) 515 037 001", "1 p.m. - 11 p.m."));
-        guideItems.add(new GuideItem("InAzia", "2 Bolesława Prusa St.", R.drawable.in_azia,"(+48 22) 450 61 00", "5 p.m. - 11 p.m."));
+        guideItems.add(new GuideItem(getString(R.string.rest_1_name), getString(R.string.rest_1_addr), R.drawable.san_thai,getString(R.string.rest_1_phone), getString(R.string.rest_1_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_2_name), getString(R.string.rest_2_addr), R.drawable.sushi,getString(R.string.rest_2_phone), getString(R.string.rest_2_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_3_name), getString(R.string.rest_3_addr), R.drawable.amber,getString(R.string.rest_3_phone), getString(R.string.rest_3_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_4_name), getString(R.string.rest_4_addr), R.drawable.sowa,getString(R.string.rest_4_phone), getString(R.string.rest_4_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_5_name), getString(R.string.rest_5_addr), R.drawable.rozana,getString(R.string.rest_5_phone), getString(R.string.rest_5_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_6_name), getString(R.string.rest_6_addr), R.drawable.stolica,getString(R.string.rest_6_phone), getString(R.string.rest_6_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_7_name), getString(R.string.rest_7_addr), R.drawable.maho,getString(R.string.rest_7_phone), getString(R.string.rest_7_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_8_name), getString(R.string.rest_8_addr), R.drawable.mr_india,getString(R.string.rest_8_phone), getString(R.string.rest_8_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_9_name), getString(R.string.rest_9_addr), R.drawable.hoza,getString(R.string.rest_9_phone), getString(R.string.rest_9_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_10_name), getString(R.string.rest_10_addr), R.drawable.in_azia,getString(R.string.rest_10_phone), getString(R.string.rest_10_hours)));
 
         GuideItemAdapter adapter = new GuideItemAdapter(getActivity(), guideItems);
 

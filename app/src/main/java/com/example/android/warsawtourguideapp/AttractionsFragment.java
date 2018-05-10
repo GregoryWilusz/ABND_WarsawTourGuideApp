@@ -32,15 +32,14 @@ public class AttractionsFragment extends Fragment {
 
         final ArrayList<GuideItem> guideItems = new ArrayList<GuideItem>();
 
-        guideItems.add(new GuideItem("The Royal Castle", "4 Zamkowy Sq.", R.drawable.royal_castle, " (+48 22) 35 55 170", "11 a.m. - 6 p.m."));
-        guideItems.add(new GuideItem("Museum of the History of the Polish Jews", "6 Anielewicza St.", R.drawable.polin, " (+48 22) 47 10 301", "10 a.m. - 6 p.m."));
-        guideItems.add(new GuideItem("The Warsaw Rising Museum", "79 Grzybowska St.", R.drawable.mpw, " (+48 22) 539 79 37", "10 a.m. - 6 p.m."));
-        guideItems.add(new GuideItem("King Jan III's Palace at Wilanów", "10/16 Stanislawa Kostki Potockiego St.", R.drawable.wilanow, " (+48 22) 54 42 700", "9:30 a.m. - 4 p.m."));
-        guideItems.add(new GuideItem("The Royal Łazienki - Gardens", "1 Agrykoli St.", R.drawable.lazienki, " (+48 22) 50 60 028", "9 a.m. - 9 p.m."));
-        guideItems.add(new GuideItem("The Fryderyk Chopin Museum in Warsaw", "1 Okólnik St.", R.drawable.chopin, " (+48 22) 441 62 51", "11 a.m. - 8 p.m."));
-        guideItems.add(new GuideItem("Copernicus Science Centre", "20 Wybrzeże Kościuszkowskie St.", R.drawable.copernicus, " (+48 22) 596 41 00", "10 a.m. - 6 p.m."));
-        guideItems.add(new GuideItem("The Palace of Culture and Science - Viewing Terrace", "1 Defilad Sq.", R.drawable.pkin, " (+48 22) 22 656 76 00", "10 a.m. - 8 p.m."));
-
+        guideItems.add(new GuideItem(getString(R.string.attr_1_name), getString(R.string.attr_1_addr), R.drawable.royal_castle, getString(R.string.attr_1_phone), getString(R.string.attr_1_hours)));
+        guideItems.add(new GuideItem(getString(R.string.attr_2_name), getString(R.string.attr_2_addr), R.drawable.polin, getString(R.string.attr_2_phone), getString(R.string.attr_2_hours)));
+        guideItems.add(new GuideItem(getString(R.string.attr_3_name), getString(R.string.attr_3_addr), R.drawable.mpw, getString(R.string.attr_3_phone), getString(R.string.attr_3_hours)));
+        guideItems.add(new GuideItem(getString(R.string.attr_4_name), getString(R.string.attr_4_addr), R.drawable.wilanow, getString(R.string.attr_4_phone), getString(R.string.attr_4_hours)));
+        guideItems.add(new GuideItem(getString(R.string.attr_5_name), getString(R.string.attr_5_addr), R.drawable.lazienki, getString(R.string.attr_5_phone), getString(R.string.attr_5_hours)));
+        guideItems.add(new GuideItem(getString(R.string.attr_6_name), getString(R.string.attr_6_addr), R.drawable.chopin, getString(R.string.attr_6_phone), getString(R.string.attr_6_hours)));
+        guideItems.add(new GuideItem(getString(R.string.attr_7_name), getString(R.string.attr_7_addr), R.drawable.copernicus, getString(R.string.attr_7_phone), getString(R.string.attr_7_hours)));
+        guideItems.add(new GuideItem(getString(R.string.attr_8_name), getString(R.string.attr_8_addr), R.drawable.pkin, getString(R.string.attr_8_phone), getString(R.string.attr_8_hours)));
 
         GuideItemAdapter adapter = new GuideItemAdapter(getActivity(), guideItems);
 
