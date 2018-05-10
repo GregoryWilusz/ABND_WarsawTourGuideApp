@@ -4,19 +4,19 @@
     android:id="@+id/linear_layout_background"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:paddingTop="6dp"
-    android:paddingBottom="6dp"
     android:background="@color/colorPrimaryDark"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/app_padding_standard"
+    android:paddingTop="@dimen/app_padding_standard">
 
     <ImageView
         android:id="@+id/item_image_view"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginLeft="6dp"
-        android:layout_marginRight="6dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/warsaw_attraction_image_description" />
+        android:layout_height="@dimen/item_image_height"
+        android:layout_marginLeft="@dimen/app_padding_standard"
+        android:layout_marginRight="@dimen/app_padding_standard"
+        android:contentDescription="@string/warsaw_attraction_image_description"
+        android:scaleType="centerCrop" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,115 +28,71 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:padding="16dp"
+            android:padding="@dimen/item_name_padding"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
             tools:text="Warsaw Uprising Museum" />
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            style="@style/itemSection">
 
             <TextView
                 android:id="@+id/item_address_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="5dp"
-                android:text="@string/address_label"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/colorAccent"
-                android:textStyle="bold" />
+                style="@style/itemLabel"
+                android:text="@string/address_label"/>
 
             <TextView
                 android:id="@+id/item_address_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/colorAccent"
+                style="@style/itemValue"
                 tools:text="Warsaw, Elektoralna 8 St." />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/opening_hours_section"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            style="@style/itemSection">
 
             <TextView
                 android:id="@+id/item_opening_hours_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="5dp"
-                android:text="@string/opening_hours_label"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/colorAccent"
-                android:textStyle="bold" />
+                style="@style/itemLabel"
+                android:text="@string/opening_hours_label"/>
 
             <TextView
                 android:id="@+id/item_opening_hours_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/colorAccent"
+                style="@style/itemValue"
                 tools:text="10:00 - 20:00" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/phone_number_section"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            style="@style/itemSection">
 
             <TextView
                 android:id="@+id/item_phone_number_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="5dp"
-                android:text="@string/phone_number_label"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/colorAccent"
-                android:textStyle="bold" />
+                style="@style/itemLabel"
+                android:text="@string/phone_number_label" />
 
             <TextView
                 android:id="@+id/item_phone_number_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/colorAccent"
+                style="@style/itemValue"
                 tools:text="10:00 - 20:00" />
 
         </LinearLayout>
 
         <LinearLayout
             android:id="@+id/when_festival_section"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            style="@style/itemSection">
 
             <TextView
                 android:id="@+id/item_when_label"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingRight="5dp"
-                android:text="@string/when_label"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/colorAccent"
-                android:textStyle="bold" />
+                style="@style/itemLabel"
+                android:text="@string/when_label" />
 
             <TextView
                 android:id="@+id/item_when_text_view"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:textAppearanceMedium"
-                android:textColor="@color/colorAccent"
+                style="@style/itemValue"
                 tools:text="August 12th" />
 
         </LinearLayout>

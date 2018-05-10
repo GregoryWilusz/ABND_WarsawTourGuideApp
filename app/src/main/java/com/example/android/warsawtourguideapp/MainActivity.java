@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
         drawerLayout.closeDrawers();
     }
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {

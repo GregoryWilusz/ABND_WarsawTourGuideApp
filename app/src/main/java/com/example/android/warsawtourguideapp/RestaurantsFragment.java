@@ -42,7 +42,7 @@ public class RestaurantsFragment extends Fragment {
         guideItems.add(new GuideItem(getString(R.string.rest_7_name), getString(R.string.rest_7_addr), R.drawable.maho,getString(R.string.rest_7_phone), getString(R.string.rest_7_hours)));
         guideItems.add(new GuideItem(getString(R.string.rest_8_name), getString(R.string.rest_8_addr), R.drawable.mr_india,getString(R.string.rest_8_phone), getString(R.string.rest_8_hours)));
         guideItems.add(new GuideItem(getString(R.string.rest_9_name), getString(R.string.rest_9_addr), R.drawable.hoza,getString(R.string.rest_9_phone), getString(R.string.rest_9_hours)));
-        guideItems.add(new GuideItem(getString(R.string.rest_10_name), getString(R.string.rest_10_addr), R.drawable.in_azia,getString(R.string.rest_10_phone), getString(R.string.rest_10_hours)));
+        guideItems.add(new GuideItem(getString(R.string.rest_10_name), getString(R.string.rest_10_addr), R.drawable.in_azia, getString(R.string.rest_10_phone), getString(R.string.rest_10_hours)));
 
         GuideItemAdapter adapter = new GuideItemAdapter(getActivity(), guideItems);
 
