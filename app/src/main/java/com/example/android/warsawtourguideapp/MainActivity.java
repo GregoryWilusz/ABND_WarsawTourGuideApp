@@ -4,6 +4,7 @@ import android.graphics.drawable.Drawable;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -35,6 +36,12 @@ public class MainActivity extends AppCompatActivity {
         actionBar.setHomeAsUpIndicator(menu);
 
         setupDrawerContent(navigationView);
+
+        if (savedInstanceState == null) {
+            FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+            Fragment fragment = new AttractionsFragment();
+            transaction.replace(R.id.content_frame, fragment).commit();
+        }
     }
 
     private void setupDrawerContent(NavigationView navigationView) {
@@ -47,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
-
 
     public void selectDrawerItem(MenuItem menuItem) {
         // Create a new fragment and specify the fragment to show based on nav item clicked
@@ -65,9 +71,6 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.nav_summer_festivals:
                 fragmentClass = FestivalsFragment.class;
-                break;
-            case R.id.nav_home:
-                fragmentClass = HomeFragment.class;
                 break;
             default:
                 fragmentClass = AttractionsFragment.class;
@@ -101,6 +104,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
-
 
 }

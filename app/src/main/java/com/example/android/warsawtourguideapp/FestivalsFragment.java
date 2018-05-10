@@ -40,6 +40,7 @@ public class FestivalsFragment extends Fragment {
         guideItems.add(new GuideItem(getString(R.string.fest_5_name), getString(R.string.fest_5_addr), getString(R.string.fest_5_date_from), getString(R.string.fest_5_date_to)));
         guideItems.add(new GuideItem(getString(R.string.fest_6_name), getString(R.string.fest_6_addr), getString(R.string.fest_6_date_from), getString(R.string.fest_6_date_to)));
         guideItems.add(new GuideItem(getString(R.string.fest_7_name), getString(R.string.fest_7_addr), getString(R.string.fest_7_date_from)));
+
         
 
         GuideItemAdapter adapter = new GuideItemAdapter(getActivity(), guideItems);

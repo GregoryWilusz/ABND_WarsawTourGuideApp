@@ -17,15 +17,5 @@
             android:id="@+id/nav_summer_festivals"
             android:icon="@drawable/festival"
             android:title="@string/nav_summer_festivals" />
-        <item android:title="@string/nav_sub_menu">
-            <menu>
-                <group android:checkableBehavior="single">
-                    <item
-                        android:id="@+id/nav_home"
-                        android:icon="@drawable/home_icon"
-                        android:title="@string/nav_home_screen" />
-                </group>
-            </menu>
-        </item>
     </group>
 </menu>
